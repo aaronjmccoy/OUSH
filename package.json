@@ -1,0 +1,20 @@
+{
+  "name": "oush",
+  "version": "2.0.0",
+  "description": "A command line interface for OmniUpdate API",
+  "main": "oush.js",
+  "scripts": {
+    "test": "help"
+  },
+  "authors": [
+    "Aaron McCoy",
+    "Fernando Iglesias, Nick Taylor, Joe D'Agostino, Soe Hlaing"
+  ],
+  "license": "ISC",
+  "bin": {
+    "oush": "./oush.js"
+  },
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
