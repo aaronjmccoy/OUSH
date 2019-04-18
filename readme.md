@@ -35,7 +35,7 @@ If you ever need to remove this tool, you can remove it by navigating to the sou
 
 `npm unlink`
 
-## What can I do now that this is installed?
+# What can I do now that this is installed?
 
 You can do really cool stuff! This is largely intended to assist in administrative action commands like enrolling new users, checking files in and out, publishing, and other commands that don't return values.
 
@@ -46,3 +46,9 @@ _HOWEVER_, you can also use this tool to capture the JSON responses from the API
 The var you make from that will be a valid object.
 
 Cheers!
+
+# TODO
+-Make an authentication config function to be used in the command line, aka:
+`git config user.name "fernando iglesias"`
+-Print responses in pretty formats, the response objects aren't easy to read as terminal printout
+-Find a way to automate the get/post argument, this could mean writing out a function for each endpoint in the api with strict parameters, but there could also be a creative way to do this we don't know about.
