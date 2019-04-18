@@ -51,6 +51,7 @@ Cheers!
 
 # TODO
 -Make an authentication config function to be used in the command line, aka:
+
 `git config user.name "fernando iglesias"`
 
 -Print responses in pretty formats, the response objects aren't easy to read as terminal printout
