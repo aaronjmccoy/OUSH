@@ -2,6 +2,10 @@
 
 OmniUpdate Shell utility was written using Node.js, and it acts as a wrapper for calls to the endpoints in the OU API at developers.omniupdate.com
 
+#Prerequisites
+
+You need to have a working install of Node.js
+
 # Install
 
 Download or clone the project into a local folder, then run:
