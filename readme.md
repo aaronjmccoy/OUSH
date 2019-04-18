@@ -57,3 +57,5 @@ Cheers!
 -Print responses in pretty formats, the response objects aren't easy to read as terminal printout
 
 -Find a way to automate the get/post argument, this could mean writing out a function for each endpoint in the api with strict parameters, but there could also be a creative way to do this we don't know about.
+
+-Build a library around the existing oush function that extends the api into discrete work flow functions with good documentation instead of one generalized function.
