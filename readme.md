@@ -50,5 +50,7 @@ Cheers!
 # TODO
 -Make an authentication config function to be used in the command line, aka:
 `git config user.name "fernando iglesias"`
+
 -Print responses in pretty formats, the response objects aren't easy to read as terminal printout
+
 -Find a way to automate the get/post argument, this could mean writing out a function for each endpoint in the api with strict parameters, but there could also be a creative way to do this we don't know about.
