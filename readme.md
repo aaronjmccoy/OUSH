@@ -6,6 +6,20 @@ OmniUpdate Shell utility was written using Node.js, and it acts as a wrapper for
 
 You need to have a working install of Node.js
 
+You need to have ENV vars set for:
+
+OU_UN -> your OU username
+OU_PW -> your OU password
+OU_ACC -> your OU account
+
+Here's the code where this comes into play:
+
+`OU_USERNAME = process.env.OU_UN;`
+`OU_PASSWORD = process.env.OU_PW;`
+`OU_ACCOUNT = process.env.OU_ACC;`
+
+We aren't sure how this works with CAS / SAML / other auth gateways yet, so if you have trouble try making an OU user for this purpose.
+
 # Install
 
 Download or clone the project into a local folder, then run:
