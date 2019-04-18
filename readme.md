@@ -15,7 +15,9 @@ OU_ACC -> your OU account
 Here's the code where this comes into play:
 
 `OU_USERNAME = process.env.OU_UN;`
+
 `OU_PASSWORD = process.env.OU_PW;`
+
 `OU_ACCOUNT = process.env.OU_ACC;`
 
 We aren't sure how this works with CAS / SAML / other auth gateways yet, so if you have trouble try making an OU user for this purpose.
