@@ -2,7 +2,7 @@
 
 OmniUpdate Shell utility was written using Node.js, and it acts as a wrapper for calls to the endpoints in the OU API at developers.omniupdate.com
 
-#Prerequisites
+# Prerequisites
 
 You need to have a working install of Node.js
 
@@ -39,7 +39,19 @@ If you ever need to remove this tool, you can remove it by navigating to the sou
 
 # What can I do now that this is installed?
 
-You can do really cool stuff! This is largely intended to assist in administrative action commands like enrolling new users, checking files in and out, publishing, and other commands that don't return values.
+You can do really cool stuff! This is largely intended to assist in administrative action commands like enrolling new users, checking files in and out, publishing, and other commands that don't return values. Some examples:
+
+List all users, [API Reference](https://developers.omniupdate.com/#!/Users/get_users_list):
+
+`oush get users list`
+
+Create a new user, [API Reference](https://developers.omniupdate.com/#!/Users/post_users_new):
+
+`oush post users new jkirk enterprise123 first_name=James last_name=kirk`
+
+Check out a file, [API Reference](https://developers.omniupdate.com/#!/Files/post_files_checkout):
+
+`oush post files checkout /path/to/file.pcf`
 
 _HOWEVER_, you can also use this tool to capture the JSON responses from the API. The function always returns the responding object, so if you use this function in a script you'll be able to do something like:
 

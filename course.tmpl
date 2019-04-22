@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/directory/profile.xsl" title="Directory" extension="html"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+
+	<ouc:properties label="config">
+		<!-- general page setup -->
+		<parameter section="Faculty-Staff Info" name="breadcrumb" type="text" prompt="Page Breadcrumb" alt="Used to calculate page title."><!--%echo var="breadcrumb" --></parameter>
+		<parameter section="Configuration" name="layout" type="select" group="Everyone" prompt="Page Layout" alt="Select a page layout.">
+			<!--%echo var="layout" encoding="none" --></parameter>
+		<parameter name="gallery-type" type="select" prompt="Gallery" alt="Select an LDP type to display, if a gallery asset is added to page." output="xml">
+			<!--%echo var="gallery-type" encoding="none" --></parameter>
+		<parameter name="protection" type="select" prompt="Page Protection" alt="Select Page Protection" output="xml">
+			<!--%echo var="protection" encoding="none" --></parameter>
+	</ouc:properties>
+
+	<ouc:info><tcf><!--%echo var="tcf-file" --></tcf>
+	<tmpl>/_resources/ou/templates/courses.tmpl</tmpl>
+	</ouc:info>
+	<profile>
+		<ouc:div label="title" group="Everyone" button="hide">
+			<ouc:multiedit type="text" prompt="Course Title" alt="Enter the course title"/>
+			<!--%echo var="name" -->
+		</ouc:div>
+		<ouc:div label="description" group="Everyone" button="hide">
+			<ouc:multiedit type="text" prompt="Course Title" alt="Enter the course title"/>
+			<!--%echo var="name" -->
+		</ouc:div>
+		<ouc:div label="location" group="Everyone" button="hide">
+			<ouc:multiedit type="select" prompt="Primary Department / Unit" alt="Select your primary department." options=":;CE18:CE18;CE17:CE17;CE16:CE16;" />
+		</ouc:div>
+		<ouc:div label="startdate" group="Everyone" button="hide">
+			<ouc:multiedit type="date" prompt="Enter the start date" alt="Enter the start date"/>
+		</ouc:div>
+		<ouc:div label="enddate" group="Everyone" button="hide">
+			<ouc:multiedit type="date" prompt="Enter the end date" alt="Enter the end date"/>
+		</ouc:div>
+		<ouc:div label="starttime" group="Everyone" button="hide">
+			<ouc:multiedit type="select" prompt="Enter the time slot" alt="Enter the time slot this class occurs on." options=":;930:930;1030:1030;1130:1130;" />
+		</ouc:div>
+		<ouc:div label="endtime" group="Everyone" button="hide">
+			<ouc:multiedit type="select" prompt="Enter the time slot" alt="Enter the time slot this class occurs on." options=":;930:930;1030:1030;1130:1130;" />
+		</ouc:div>
+		<ouc:div label="instructor" group="Everyone" button="hide">
+			<ouc:multiedit type="text" prompt="Enter the insturctor name" alt="Enter the insturctor name"/>
+			<!--%echo var="name" -->
+		</ouc:div>
+		<ouc:div label="cost" group="Everyone" button="hide">
+		  <ouc:multiedit type="textarea" prompt="Enter the cost content" alt="" rows="7" editor="yes"/>
+		</ouc:div>
+	</profile>
+	<ouc:div label="leftcolumn" group="Everyone" button-text="Left Column" break="break">
+		<ouc:editor csspath="/_resources/ou/editor/interior.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="leftcolumn" break="break"/></ouc:div>
+	<ouc:div label="rightcolumn" group="Everyone" button-text="Right Column">
+		<ouc:editor csspath="/_resources/ou/editor/interior.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="rightcolumn"/></ouc:div>
+</document>

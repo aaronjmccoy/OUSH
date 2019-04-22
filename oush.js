@@ -58,6 +58,7 @@ function ou_sh(method,gadget_token,endpoint,params) {
     request.get(reqString, function(error, response, body) {
       if(!error){
         var obj = JSON.parse(body);
+        console.log(body);
         console.log('Success for call to '+endpoint+' with params '+params);
         return obj;
       }else{
