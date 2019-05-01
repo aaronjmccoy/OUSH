@@ -3,6 +3,7 @@ const OU_API_URL = "https://a.cms.omniupdate.com"
 const OU_USERNAME = process.env.OU_UN;
 const OU_PASSWORD = process.env.OU_PW;
 const OU_ACCOUNT = process.env.OU_ACC;
+//OU_SKIN is the site name, we may need to consider how to handle using this across different sites
 var OU_SKIN = "outc19";
 var request = require('request');
 
