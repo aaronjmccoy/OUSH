@@ -9,7 +9,7 @@ var request = require('request');
 // Wrap all calls in an auth request so you have a valid gadget token
 request.post({
   headers: {'content-type' : 'application/x-www-form-urlencoded'},
-  url: OU_API_URL + "/authentication/cas_login",
+  url: OU_API_URL + "/authentication/login",
   body: "skin=" + OU_SKIN + "&username=" + OU_USERNAME + "&password=" + OU_PASSWORD + "&account=" + OU_ACCOUNT,
 },
 function(error, response, body) {
